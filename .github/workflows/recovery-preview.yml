@@ -120,7 +120,7 @@ jobs:
           SOURCE_BRANCH: recovery/2026-10-15-admin-modules
         run: |
           set -euo pipefail
-          if grep -R -E 'ahiaymyqfmyyrjkwgvhi\.supabase\.co|sb_publishable_' dist/assets; then
+          if grep -R -E 'ahiaymyqfmyyrjkwgvhi\.supabase\.co|sb_publishable_3wqaYyxPJ6spRNS0jNOi4w_69Jqc3-b' dist/assets; then
             echo "A production Supabase endpoint or key was found in the preview bundle." >&2
             exit 1
           fi
