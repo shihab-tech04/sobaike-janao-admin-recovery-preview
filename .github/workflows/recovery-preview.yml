@@ -30,9 +30,9 @@ jobs:
         env:
           SOURCE_REPOSITORY: shihab-tech04/Sobaike-Janao-Admin
           SOURCE_BRANCH: recovery/2026-10-15-admin-modules
-          VERIFIED_SOURCE_SHA: 658a12a05dbdb96f0d6cf863388d6956850a4449
+          VERIFIED_SOURCE_SHA: 39b0de1d9c9eba5109572e4d3bee2571fd4c7363
           REQUIRED_BROWSER_CHECK: Admin responsive EN/BN browser smoke
-          VERIFIED_BUILD_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39154061887
+          VERIFIED_BUILD_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39154516202
           VERIFIED_BROWSER_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39144162373
         run: |
           set -euo pipefail
