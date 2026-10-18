@@ -30,10 +30,10 @@ jobs:
         env:
           SOURCE_REPOSITORY: shihab-tech04/Sobaike-Janao-Admin
           SOURCE_BRANCH: recovery/2026-10-15-admin-modules
-          VERIFIED_SOURCE_SHA: 39b0de1d9c9eba5109572e4d3bee2571fd4c7363
+          VERIFIED_SOURCE_SHA: 92ec4fdf248ddfd562e3ca36cb0dc0382669c700
           REQUIRED_BROWSER_CHECK: Admin responsive EN/BN browser smoke
-          VERIFIED_BUILD_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39154516202
-          VERIFIED_BROWSER_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39144162373
+          VERIFIED_BUILD_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39155861656
+          VERIFIED_BROWSER_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39155858173
         run: |
           set -euo pipefail
           actual_sha="$(git ls-remote "https://github.com/${SOURCE_REPOSITORY}.git" "refs/heads/${SOURCE_BRANCH}" | awk 'NR == 1 { print $1 }')"
