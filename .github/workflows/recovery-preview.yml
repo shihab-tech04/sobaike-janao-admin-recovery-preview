@@ -30,11 +30,11 @@ jobs:
         env:
           SOURCE_REPOSITORY: shihab-tech04/Sobaike-Janao-Admin
           SOURCE_BRANCH: recovery/2026-10-15-admin-modules
-          VERIFIED_SOURCE_SHA: 3d1ab699408ddfe0f898c3a87e4057eda5ca8427
+          VERIFIED_SOURCE_SHA: 0c75c479ea488c2729e662b865901e065d4ff633
           REQUIRED_BROWSER_CHECK: Admin responsive EN/BN browser smoke
-          VERIFIED_BUILD_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39183370091
-          VERIFIED_BROWSER_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39183366222
-          VERIFIED_SQL_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39183366350
+          VERIFIED_BUILD_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39209623383
+          VERIFIED_BROWSER_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39209619188
+          VERIFIED_SQL_RUN: https://github.com/shihab-tech04/Sobaike-Janao-Admin/actions/runs/39209619295
         run: |
           set -euo pipefail
           actual_sha="$(git ls-remote "https://github.com/${SOURCE_REPOSITORY}.git" "refs/heads/${SOURCE_BRANCH}" | awk 'NR == 1 { print $1 }')"
@@ -51,7 +51,7 @@ jobs:
           echo "Verified recovery source SHA: $actual_sha"
           echo "Required source checks: build and $REQUIRED_BROWSER_CHECK"
           echo "Build evidence: $VERIFIED_BUILD_RUN"
-          echo "Verified Phase04 browser run: $VERIFIED_BROWSER_RUN"
+          echo "Verified Phase09 browser run: $VERIFIED_BROWSER_RUN"
           {
             echo "ready=true"
             echo "source_sha=$actual_sha"
